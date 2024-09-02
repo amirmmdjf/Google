@@ -1,0 +1,221 @@
+/* #d3e3fd */
+body {
+    /* margin: 0; */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+    height: 100%;
+    padding: 100px 2px;
+}
+
+.container__logo-box {
+    background-image: url('./assets/google_logo.svg');
+    height: 9.5rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__input-box {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 1px 5px rgba(48, 48, 48, 0.332);
+    width: 45.2rem;
+    height: 2.9rem;
+    margin-top: 0.5rem;
+    margin: 0px 64px;
+}
+
+.left-box {
+    width: 3.3rem;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+.left-box>* {
+    color: rgba(70, 68, 68, 0.166);
+}
+
+.input-box {
+    width: 80%;
+    border: none;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    outline: none;
+    text-overflow: ellipsis;
+}
+
+.input-box:focus::placeholder {
+    color: transparent;
+    /* Hide the placeholder text when focused */
+}
+
+.right-box {
+    width: 90px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.right-box>div {
+    width: 50%;
+    height: 100%;
+}
+
+.mic {
+    background-image: url('./assets/mic.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px;
+    cursor: pointer;
+}
+
+.cam {
+    background-image: url('./assets/camera.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px;
+    cursor: pointer;
+}
+
+.container__icon-box {
+    width: 100%;
+    height: 7.6rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 1s;
+}
+
+.container__icon-box>a {
+    width: 7.3rem;
+    height: 7.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.container__icon-box>a:hover {
+    background-color: rgba(35, 34, 34, 0.118);
+    border-radius: 5px;
+}
+
+
+.container__icon-box a>img {
+    width: 25%;
+    border: 11px solid rgba(174, 172, 172, 0.24);
+    border-radius: 50%;
+}
+
+.container__icon-box p {
+    font-size: 13.5px;
+}
+
+.svg-box {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3e3fd;
+    color: #041e49;
+}
+
+.gmail-box {
+    /* border: 1px solid black; */
+    width: 190px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 17px;
+}
+
+.gmail-box> a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #000000de;
+}
+
+.gmail-box__images{
+    margin-right: 3px;
+}
+
+.gmail-box>a:hover {
+    text-decoration: underline;
+}
+
+.gmail-box .all-icon{
+    opacity: 0.6;
+    color: red;
+}
+
+.gmail-box .profile-image{
+    border-radius: 50%;
+    width: 32px;
+}
+
+.customize-box{
+    background-color: #d3e3fd;
+    width: 170px;
+    height: 32px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50px;
+    display: flex;
+    color: #041e49;
+    font-size: 13px;
+    display: flex;
+    cursor: pointer;
+}
+
+.customize-box__icon{
+    width: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-right: 1px solid black; */
+    background-image: url('./assets//icon_pencil.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+}
+
+.customize-box__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
