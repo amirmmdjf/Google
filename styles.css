@@ -160,13 +160,13 @@ body {
     padding: 8px 17px;
 }
 
-.gmail-box> a {
+.gmail-box>a {
     font-size: 13px;
     text-decoration: none;
     color: #000000de;
 }
 
-.gmail-box__images{
+.gmail-box__images {
     margin-right: 3px;
 }
 
@@ -174,17 +174,17 @@ body {
     text-decoration: underline;
 }
 
-.gmail-box .all-icon{
+.gmail-box .all-icon {
     opacity: 0.6;
     color: red;
 }
 
-.gmail-box .profile-image{
+.gmail-box .profile-image {
     border-radius: 50%;
     width: 32px;
 }
 
-.customize-box{
+.customize-box {
     background-color: #d3e3fd;
     width: 170px;
     height: 32px;
@@ -199,7 +199,7 @@ body {
     cursor: pointer;
 }
 
-.customize-box__icon{
+.customize-box__icon {
     width: 40px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -213,9 +213,22 @@ body {
     background-size: 17px;
 }
 
-.customize-box__text{
+.customize-box__text {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .customize-box {
+        width: 35px;
+    }
+
+    .customize-box__text {
+        display: none;
+    }
+
 }
